@@ -38,3 +38,24 @@ console.log(typeof id); //symbol
 console.log(typeof outsideTemp);//object
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//stack(store primitive Value)-> provide copy of the variable
+let email="saket@gmail"
+let email2=email;
+email2="harsh@gmail"
+console.log(email)   //saket@gmail
+console.log(email2); //harsh@gmail
+
+//Heap(store non-primitive Value)-> provide reference of the variable
+
+let user1 = {
+    name:"Saket",
+    age:20
+}
+let user2= user1;
+user2.name="harsh";
+console.log(user1.name);  //harsh
+console.log(user2.name);  //harsh
